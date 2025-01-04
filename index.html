@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerve Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle">
+            <button class="active" data-view="Bullish">Bullish</button>
+            <button data-view="Bearish">Bearish</button>
+            <button data-view="RangeBound">RangeBound</button>
+            <button data-view="Volatile">Volatile</button>
+        </div>
+
+        <div class="dropdown">
+            <select id="date-dropdown">
+                <!-- Options will be dynamically populated -->
+            </select>
+        </div>
+
+        <div class="cards" id="cards-container">
+            <!-- Strategy cards will be rendered here -->
+        </div>
+
+        <div class="empty-state" id="empty-state" style="display: none;">
+            No strategies available for the selected date.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
